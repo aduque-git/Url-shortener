@@ -61,3 +61,8 @@ jobs:
         with:
           name: jacoco-report
           path: target/site/jacoco/
+
+      - name: Qodana
+        uses: JetBrains/qodana-action@v2026.2
+        with:
+          args: --linter qodana-jvm-community
